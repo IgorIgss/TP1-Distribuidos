@@ -27,30 +27,30 @@ class Servidor(object):
 
     def adicionarProdutor(self, ns): #função que adiciona um produtor
         produtorGerenciadordeNot.append(ns)
-        print("ADD P:", ns)
-        logString = "ADD Produtor em GN -> NS:" + str(ns) + " ;"
+        print("Adicionar produtor:", ns)
+        logString = "Adicionar produtor no gerenciador de notificacao -> NS:" + str(ns) + " ;"
         log(logString + "\n")
 
     def removerProdutor(self, ns): #função que remove produtor
         produtorGerenciadordeNot.remove(ns)
-        print("REMOVE P:", ns)
-        logString = "Remover Produtor em GN -> NS:" + str(ns) + " ;"
+        print("Remover produtor:", ns)
+        logString = "Remover Produtor no gerenciador de notificacao -> NS:" + str(ns) + " ;"
         log(logString + "\n")
 
     def adicionarConsumidor(self, ns): #função que adiciona um consumidor
         consumidorGerenciadordeNot.append(ns)
-        print("ADD C:", ns)
-        logString = "ADD Consumidor em GN -> NS:" + str(ns) + " ;"
+        print("Adicionar consumidor:", ns)
+        logString = "Adicionar consumidor no gerenciador de notificacao -> NS:" + str(ns) + " ;"
         log(logString + "\n")
 
     def removerConsumidor(self, ns): #função que remove um consumidor
         consumidorGerenciadordeNot.append(ns)
-        print("REM C:", ns)
-        logString = "REM Consumidor em GN -> NS:" + str(ns) + " ;"
+        print("remover consumidor:", ns)
+        logString = "Remover consumidor no gerenciador de notificacao -> NS:" + str(ns) + " ;"
         log(logString + "\n")
 
     def CorrigindoaHora(self):
-        logString = "Hora no GN:" + str(datetime.datetime.now().strftime("%H:%M:%S")) + " ;"
+        logString = "Hora no gerenciador de notificacao:" + str(datetime.datetime.now().strftime("%H:%M:%S")) + " ;"
         log(logString + "\n")
         return (datetime.datetime.now().strftime("%H:%M:%S"))
 
