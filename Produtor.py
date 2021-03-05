@@ -40,8 +40,8 @@ class Produtor:
 
     def adicionarConsumidorNProdutor(self, cons): #Os consumidores serão adicionados em uma lista
         consumidores.append(cons)
-        print("ADD C no P:", cons)
-        logString = "ADD Consumidor no Produtor: " + str(cons) + ";"
+        print("Adicionar o consumidor no produtor:", cons)
+        logString = "Adicionar Consumidor no Produtor: " + str(cons) + ";"
         log(logString + "\n")
 
 
@@ -115,7 +115,7 @@ def main(): #Principal
         ns.register(nomeSp, uri)
         logString = "Servidor Produtor Inicializado -> URI:" + str(uri) + "," + " NS" + str(ns) + ";" #log
         log(logString + "\n")
-        print("\"REDE\" que o consumidor se conectará \n", nomeSp)
+        print("\"Rede\" que o consumidor se conectará \n", nomeSp)
         logString = "Rede que o consumidor conectará:" + str(nomeSp) + ";"
         log(logString + "\n")
         daemon.requestLoop() # O servidor seguirá ativado!
